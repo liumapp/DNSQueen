@@ -1,5 +1,7 @@
 package com.liumapp.DNSQueen.worker.ready;
 
+import com.liumapp.DNSQueen.worker.job.JobTodo;
+
 import java.util.List;
 
 /**
