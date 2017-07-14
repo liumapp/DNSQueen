@@ -17,7 +17,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 public class Queen {
 
-
     public static int DEFAULT_PORT = 40310;//40310
 
     public static String DEFAULT_ADDRESS = "127.0.0.1";
