@@ -17,7 +17,7 @@ public class DNSQueenTest extends TestCase {
 
     @Test
     public void test() throws InterruptedException {
-
+//
 //        Queen queen = new Queen();
 //        try {
 //            queen.connect();
@@ -39,5 +39,6 @@ public class DNSQueenTest extends TestCase {
 //        }
 
     }
+
 
 }
