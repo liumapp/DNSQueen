@@ -44,7 +44,7 @@ public class WokerEar implements TextProcessor, BeanPostProcessor,
 
     public void start() {
         try {
-            logger.info("start to hear wife says!");
+            logger.info("start to hear queen says!");
             tcpSocketMonitor.run();
         } catch (Throwable e) {
             logger.warn("init fail ", e);
@@ -80,11 +80,11 @@ public class WokerEar implements TextProcessor, BeanPostProcessor,
     /*
      * (non-Javadoc)
      *
-     * @see us.codecraft.wifesays.me.TextProcessor#process(java.lang.String)
+     * @see com.liumapp.DNSQueen.worker.process.TextProcessor
      */
     @Override
     public String process(String lineIn) {
-        logger.info("wife says \"" + lineIn + "\" ,what you should do?");
+        logger.info("queen says \"" + lineIn + "\" ,what you should do?");
         try {
             for (StandReady listener : listeners) {
                 String whatYouShouldDo = listener.doWhatYouShouldDo(lineIn);
@@ -127,7 +127,7 @@ public class WokerEar implements TextProcessor, BeanPostProcessor,
         }
         if (bean instanceof StandReady) {
             logger.info(bean.getClass().getName()
-                    + " will listen what wife says, good guy!");
+                    + " will listen what queen says, good guy!");
             listeners.add((StandReady) bean);
         }
         return bean;
