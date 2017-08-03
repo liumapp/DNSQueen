@@ -17,7 +17,6 @@ import java.util.concurrent.Executors;
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
-
 public class TCPSocketMonitor extends Thread {
 
     private Logger log = Logger.getLogger(this.getClass());
@@ -46,7 +45,7 @@ public class TCPSocketMonitor extends Thread {
         }
         this.setDaemon(true);
     }
-
+    
     @Override
     public void run() {
 

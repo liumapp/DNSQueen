@@ -37,7 +37,7 @@ public class WokerEar implements TextProcessor, BeanPostProcessor,
     public void setStartDelay(int startDelay) {
         this.startDelay = startDelay;
     }
-
+    
     private List<StandReady> listeners = new LinkedList<StandReady>();
 
     private Logger logger = Logger.getLogger(getClass());

@@ -2,6 +2,7 @@ package com.liumapp.DNSQueen;
 
 import com.liumapp.DNSQueen.queen.Queen;
 import junit.framework.TestCase;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -15,28 +16,33 @@ import java.io.IOException;
  */
 public class DNSQueenTest extends TestCase {
 
+    /**
+     * close your DNSBrood
+     * @throws InterruptedException
+     */
+    @Ignore
     @Test
     public void test() throws InterruptedException {
-//
-//        Queen queen = new Queen();
-//        try {
-//            queen.connect();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//        for (int i = 0 ; i < 1000 ; i++) {
-//            queen.say("hello world");
-//            try {
-//                System.out.println(queen.hear());
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            Thread.sleep(1000);
-//            if (i > 5) {
-//                queen.say("shutdown");
-//            }
-//        }
+
+        Queen queen = new Queen();
+        try {
+            queen.connect();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        for (int i = 0 ; i < 1000 ; i++) {
+            queen.say("hello world");
+            try {
+                System.out.println(queen.hear());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Thread.sleep(1000);
+            if (i > 5) {
+                queen.say("shutdown");
+            }
+        }
 
     }
 
