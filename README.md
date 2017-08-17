@@ -3,6 +3,8 @@ a socket dns manager ,which's function is send orders to DNSBrood and DNSBee .
 
 ### 使用
 
+* Star本项目
+
 * 通过maven加载project:
 
      在dependencies标签下添加以下代码
