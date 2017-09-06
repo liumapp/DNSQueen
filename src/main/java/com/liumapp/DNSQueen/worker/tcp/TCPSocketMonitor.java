@@ -79,7 +79,6 @@ public class TCPSocketMonitor extends Thread {
                 + " shutdown");
     }
 
-//
 //    public InetAddress getAddr() {
 //
 //        return addr;
