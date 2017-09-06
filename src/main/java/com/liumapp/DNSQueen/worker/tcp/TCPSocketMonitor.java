@@ -21,8 +21,6 @@ public class TCPSocketMonitor extends Thread {
 
     private Logger log = Logger.getLogger(this.getClass());
 
-    private InetAddress addr;
-
     private int port;
 
     private ServerSocket serverSocket;
@@ -32,12 +30,11 @@ public class TCPSocketMonitor extends Thread {
 
     private ExecutorService executorService = Executors.newFixedThreadPool(100);
 
-    public TCPSocketMonitor(String host, int port) {
+    public TCPSocketMonitor(int port) {
         super();
         this.port = port;
         try {
-            this.addr = Inet4Address.getByName(host);
-            serverSocket = new ServerSocket(port, 128, addr);
+            serverSocket = new ServerSocket(port, 128);
         } catch (IOException e) {
             System.err.println("Start tcp monitor failed, check whether port " + port + " is taken. Maybe an instance is already running");
             log.error("Start tcp monitor failed, check whether port " + port + " is taken. Maybe an instance is already running",e);
@@ -82,10 +79,11 @@ public class TCPSocketMonitor extends Thread {
                 + " shutdown");
     }
 
-    public InetAddress getAddr() {
-
-        return addr;
-    }
+//
+//    public InetAddress getAddr() {
+//
+//        return addr;
+//    }
 
     public int getPort() {
 
@@ -107,6 +105,6 @@ public class TCPSocketMonitor extends Thread {
 
     public String getAddressAndPort() {
 
-        return addr.getHostAddress() + ":" + port;
+        return "127.0.0.1" + ":" + port;
     }
 }
