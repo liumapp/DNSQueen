@@ -14,37 +14,33 @@ import java.io.IOException;
  * ATTENTION!!!
  * run this while your DNSBrood is running !
  */
-public class DNSQueenTest extends TestCase {
-
-    /**
-     * close your DNSBrood
-     * @throws InterruptedException
-     */
-    @Ignore
-    @Test
-    public void test() throws InterruptedException {
-
-        Queen queen = new Queen();
-        try {
-            queen.connect();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        for (int i = 0 ; i < 1000 ; i++) {
-            queen.say("hello world");
-            try {
-                System.out.println(queen.hear());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Thread.sleep(1000);
-            if (i > 5) {
-                queen.say("shutdown");
-            }
-        }
-
-    }
-
-
-}
+//public class DNSQueenTest extends TestCase {
+//
+//    @Ignore
+//    @Test
+//    public void test() throws InterruptedException {
+//
+//        Queen queen = new Queen();
+//        try {
+//            queen.connect();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        for (int i = 0 ; i < 1000 ; i++) {
+//            queen.say("hello world");
+//            try {
+//                System.out.println(queen.hear());
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            Thread.sleep(1000);
+//            if (i > 5) {
+//                queen.say("shutdown");
+//            }
+//        }
+//
+//    }
+//
+//
+//}

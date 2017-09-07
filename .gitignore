@@ -26,3 +26,5 @@ DNSQueen.iml
 .idea
 
 target
+
+.DS_Store

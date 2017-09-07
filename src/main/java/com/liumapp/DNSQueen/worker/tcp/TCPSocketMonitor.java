@@ -54,12 +54,8 @@ public class TCPSocketMonitor extends Thread {
 
                 final Socket socket = serverSocket.accept();
 
-                log.debug("TCP connection from "
+                log.info("TCP connection from "
                         + socket.getRemoteSocketAddress());
-                if (!socket.getInetAddress().getHostAddress()
-                        .equals("127.0.0.1")) {
-                    continue;
-                }
                 executorService.execute(new TCPConnection(socket, wokerEar));
 
             } catch (SocketException e) {
