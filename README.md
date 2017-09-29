@@ -12,7 +12,7 @@ a socket dns manager ,which's function is send orders to DNSBrood and DNSBee .
         <dependency>
 			<groupId>com.liumapp</groupId>
 			<artifactId>DNSQueen</artifactId>
-			<version>1.0.1</version>
+			<version>1.2.0</version>
 		</dependency>
 
 * 修改Spring配置文件：
