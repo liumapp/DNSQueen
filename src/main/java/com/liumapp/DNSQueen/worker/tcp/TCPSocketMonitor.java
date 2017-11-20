@@ -3,6 +3,7 @@ package com.liumapp.DNSQueen.worker.tcp;
 import com.liumapp.DNSQueen.worker.process.WokerEar;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,6 +18,7 @@ import java.util.concurrent.Executors;
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
+@Component
 public class TCPSocketMonitor extends Thread {
 
     private Logger log = Logger.getLogger(this.getClass());

@@ -2,6 +2,7 @@ package com.liumapp.DNSQueen.worker.tcp;
 
 import com.liumapp.DNSQueen.worker.process.TextProcessor;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +15,6 @@ import java.net.Socket;
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
-
 public class TCPConnection implements Runnable {
 
     private static Logger log = Logger.getLogger(TCPConnection.class);
