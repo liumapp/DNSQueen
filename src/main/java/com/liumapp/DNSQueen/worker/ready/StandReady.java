@@ -12,14 +12,14 @@ import java.util.List;
 public interface StandReady {
 
     /**
-     * when wife says, what you should do?
+     * when queen says, what you should do?
      *
-     * @param whatWifeSays
+     * @param whatQueenSays
      */
-    public String doWhatYouShouldDo(String whatWifeSays);
+    public String doWhatYouShouldDo(String whatQueenSays);
 
     /**
-     * Which kind of job you will do after hear what wife says?
+     * Which kind of job you will do after hear what queen says?
      *
      * @return
      */
