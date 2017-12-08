@@ -16,30 +16,30 @@ import java.io.IOException;
  */
 public class DNSQueenTest extends TestCase {
 
-    // @Test
-    // public void test() throws InterruptedException {
+     @Test
+     public void test() throws InterruptedException {
+        if (false) {
+            Queen queen = new Queen();
+            try {
+                queen.connect();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
-    //     Queen queen = new Queen();
-    //     try {
-    //         queen.connect();
-    //     } catch (IOException e) {
-    //         e.printStackTrace();
-    //     }
-
-    //     for (int i = 0 ; i < 1000 ; i++) {
-    //         queen.say("hello world");
-    //         try {
-    //             System.out.println(queen.hear());
-    //         } catch (IOException e) {
-    //             e.printStackTrace();
-    //         }
-    //         Thread.sleep(1000);
-    //         if (i > 5) {
-    //             queen.say("shutdown");
-    //         }
-    //     }
-
-    // }
+            for (int i = 0 ; i < 1000 ; i++) {
+                queen.say("hello world");
+                try {
+                    System.out.println(queen.hear());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Thread.sleep(1000);
+                if (i > 5) {
+                    queen.say("shutdown");
+                }
+            }
+        }
+     }
 
 
 }
