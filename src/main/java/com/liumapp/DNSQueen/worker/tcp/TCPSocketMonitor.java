@@ -27,7 +27,9 @@ public class TCPSocketMonitor extends Thread {
     @Autowired
     private WokerEar wokerEar;
 
-    private ExecutorService executorService = Executors.newFixedThreadPool(100);
+    //private ExecutorService executorService = Executors.newFixedThreadPool(100);
+
+    private ExecutorService executorService = Executors.newCachedThreadPool();
 
     public TCPSocketMonitor(int port) {
         super();

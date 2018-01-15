@@ -134,7 +134,10 @@ public class Queen {
         forwardThread.setDaemon(true);
         forwardThread.start();
     }
-
+    public void close() throws IOException {
+        connected.set(false);
+        this.socket.close();
+    }
     public String getAddress() {
         return address;
     }
